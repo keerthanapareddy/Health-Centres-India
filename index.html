@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<title>Health Centres</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://d3js.org/d3.v5.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<!-- <h1>SPATIAL AI</h1> -->
+	</header>
+	<div class="entirecontainer">
+
+		<div class="map">
+			<form class="searchlocation" id="searchlocation">
+				<input id="stateName" type="text" value="Andhra Pradesh">
+				<input id="submit" type="submit" name="submitbutton" value="SUBMIT">
+			</form>
+			<div id="indiaMap" ></div>
+
+		</div>
+		<div class="data">
+     <svg id="mySVG" ></svg>
+		</div>
+
+  </div>
+
+
+
+	<main>
+	</main>
+
+	<script src="jquery-2.1.1.js"></script>
+	<script src="sketch.js"></script>
+	<script src="d3.min.js"></script>
+  <script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">	</script>
+	<script src="map.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			console.log("document ready");
+			app.initialize();
+		});
+	</script>
+
+
+</body>
+
+</html>
